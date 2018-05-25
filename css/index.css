@@ -1,0 +1,134 @@
+* {
+	box-sizing: border-box; /*Сброс настроек отступов */
+	font-family: Arial, Sans-serif; /*Тип шрифта */
+}
+body, html {
+    margin: 0px;
+	padding: 0px; /*Сброс настроек отступов */
+    background-color: black;
+    
+}
+.mytext {
+	width: 100%;  /*Ширина */
+	height: 500px; /*Высота */
+	background: url(../img1/1.jpg); /*Фоновая картинка */ 
+	background-size: cover; /* Растянуть фоновую картинку */
+	background-position: center; /*Центрировать фон */
+	color: black; /*Белый цвет шрифта */
+	text-align: center; /*Центрировать текст внутри блока */
+	padding-top: 50px; /*Отсуп сверху */
+    font-size: 40px;
+}
+.mybutton {
+	display: block; /*Кнопка должна быть display: block */
+	width: 200px; /*Ширина */
+	height: 50px; /*Высота */
+	line-height: 50px; /*Одинаковое с высотой значение центрирует текст кнопки по вертикали */
+	color: black; /* Белый цвет шрифта */
+	margin: 0 auto; /* Центрирует кнопку относительно окружения */
+	margin-top: 40px; /* Отступ сверху*/
+	text-decoration: none; /*Выключаем подчеркивание текста*/
+	border: 1px solid black; /*Делаем белую рамочку 2рх у кнопки*/
+	border-radius: 5px; /*Закругляем рамочку*/
+    font-family: Times New Roman;
+}
+.pluses {
+    width: 100%;
+    max-width: 2500px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: black;
+    background: url(../img1/images.jpg);
+    background-size: cover;
+    background-color: silver;
+} 
+.plus img {
+    width: 80%;
+    max-width: 250px;
+}
+.plus h4 {
+    position: absolute; top: 970px; left: 330px;
+}
+.price h4
+{
+   position: absolute; top: 940px; left: 900px;
+}
+.price2 h4
+{
+   position: absolute; top: 970px; left: 1450px;
+}
+.maintext {
+    width: 100%; /*Ширина*/
+    background: url(../img1/2.jpg)
+    margin: 2; /*Центнрирование*/
+    color: black;
+    text-align: right;
+    text-align: center; /*Выравнивание текста по ширине*/
+    background-size: cover;
+}
+@import url(http://fonts.googleapis.com/css?family=Capriola);
+/*Первая строка нужная для того что бы скачать необходимые шрифты,если их нет на компьютере у клиента*/
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    font-family: 'Capriola', sans-serif;
+}
+#cssmenu:before,
+#cssmenu:after,
+#cssmenu > ul:before,
+#cssmenu > ul:after {
+    content: '';
+    display: table;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+    clear: both;
+}
+#cssmenu {
+    zoom: 1;
+    height: 69px;
+    background: url(../img1/bottom-bg.png) repeat-x center bottom;
+    border-radius: 2px;
+    width: auto;
+}
+#cssmenu ul {
+    background: url(../img1/nav-bg.png) repeat-x 0px 4px;
+    height: 69px;
+}
+#cssmenu ul li {
+    float: right;
+    list-style: none;
+}
+#cssmenu ul li a {
+    display: block;
+    height: 65px;
+    padding: 22px 30px 0;
+    margin: 4px 2px 0;
+    border-radius: 2px 2px 0 0;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+    font-weight: 400;
+    opacity: .9;
+}
+#cssmenu ul li:first-child a {
+    margin: 4px 2px 0 0;
+}
+#cssmenu ul li a:hover,
+#cssmenu ul li .active a {
+    background: url(../img1/color.png) center bottom;
+    display: block;
+    height: 65px;
+    margin-top: 0px;
+    padding-top: 26px;
+    color: #004f7c;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.55);
+    opacity: 1;
+}
